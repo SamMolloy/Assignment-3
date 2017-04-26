@@ -18,6 +18,9 @@ public class Assignment3 extends PApplet{
 	//array list to store all the enemies. (Polymorphism used here as it includes 2 different types of enemy
 	ArrayList<Enemy> enemies = new ArrayList<Enemy>();
 	
+	//variables for a time interval that speeds up the enemies as the game goes on
+	float checktime, interval;
+	
 	public static void main(String[] args) {
 		PApplet.main("Assignment3");
 
@@ -29,8 +32,13 @@ public class Assignment3 extends PApplet{
     }
 
     public void setup(){
+    smooth();
+    
+	  //setting up a time interval to increase enemy speed every 8 seconds
+	  checktime = millis();
+	  interval = 8000;// 8 second time interval
     	
-    	  //for loop that starts the game off with 3 enemies
+     //for loop that starts the game off with 3 enemies
   	  for (int i = 0; i<3; i++)
   	  {
   	    enemies.add(new Enemy());
