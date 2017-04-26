@@ -289,7 +289,21 @@ public class Assignment3 extends PApplet{
       }
       
       //checks for collision between the player and all the enemy objects and deducts a life if it hits
-      
+      //checks for collision between the player and all the enemy objects and deducts a life if it hits
+      void collide()
+      {
+          for (int i = 0; i < enemies.size(); i++) 
+          {
+            float distance = dist(player.x, player.y, enemies.get(i).randomX, enemies.get(i).randomY);
+            if(distance <= 35)
+            {
+              enemies.get(i).randomX = random(40, 460);
+              enemies.get(i).randomY = random(40, 460);
+               lives --;
+            }//end if
+          }//end for   
+
+      }//end collide
       
     }//end die
 }
