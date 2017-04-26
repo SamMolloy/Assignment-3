@@ -36,6 +36,21 @@ public class Assignment3 extends PApplet{
         String s3 = "Collect green objects & avoid";
         String s4 = "everything else!";
 
+        fill(0,0,255);
+        textSize(20);
+        text(s1, 120, 350);
+        
+        fill(0,0,255);
+        textSize(20);
+        text(s2, 140, 150);
+     
+        fill(0,0,255);
+        textSize(20);
+        text(s3, 90, 250);
+        
+        fill(0,0,255);
+        textSize(20);
+        text(s4, 165, 275);
       }//end display()
       
     }//end Menu
