@@ -1,11 +1,25 @@
 
+import Assignment.Border;
+import Assignment.Collect;
 import Assignment.Die;
 import Assignment.Enemy;
-import Assignment.Enemy2;
+import Assignment.Menu;
+import Assignment.Player;
+import Assignment.Score;
 import processing.core.*;
 
 public class Assignment3 extends PApplet{
+	
+	//instantiating objects
+	Player player = new Player();
+	Enemy enemy = new Enemy();
+	Menu menu = new Menu();
+	Border border = new Border();
+	Collect collect = new Collect();
+	Die die = new Die();
+	Score score = new Score();
 
+	
 	public static void main(String[] args) {
 		PApplet.main("Assignment3");
 
