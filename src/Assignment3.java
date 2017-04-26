@@ -1,3 +1,4 @@
+import Assignment.Enemy;
 import processing.core.*;
 
 public class Assignment3 extends PApplet{
@@ -220,5 +221,19 @@ public class Assignment3 extends PApplet{
           directionX = 0;
         }
       }
-    }
+    }//end enemy
+    
+    public class Collect extends Enemy
+    {
+      
+      void display()
+      {
+
+        //Drawing the enemy model;
+        noStroke();
+        fill (0, 255, 0); 
+        rect (randomX, randomY, 20, 20, 5);
+      }//end display
+       
+    }//end collect
 }
