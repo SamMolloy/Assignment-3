@@ -54,5 +54,47 @@ public class Assignment3 extends PApplet{
       }//end display()
       
     }//end Menu
+    
+    public class Player
+    {
+        float radius = 17, directionX = 1, directionY = 0;
+        float x=250, y=450, speed=0;
+      
+      Player()
+      {
+      }
+      
+      void run()
+      {
+        display();
+        move();
+        keyPressed();
+      }//end run
+      
+      
+      void display()
+      {
+        //Drawing the player model
+        noStroke();
+        fill (255, 255, 0); 
+        ellipse (x, y, radius, radius);
+      }//end display()
+      
+      
+      void move()
+      {
+        //setting the players movement
+        x=x+speed*directionX;
+        y=y+speed*directionY; 
+        
+      }
+           
+
+
+
+      
+      
+      
+    }//end Player()
 
 }
