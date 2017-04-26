@@ -19,5 +19,25 @@ public class Assignment3 extends PApplet{
     public void draw(){
 
     }
+    
+    public class Menu
+    {  
+      
+    
+      Menu()
+      {
+      }
+      
+      void display()
+      {
+        //Strings for the start menu options
+        String s1 = "Press Up Arrow to Start!";
+        String s2 = "Arrow Keys to move";
+        String s3 = "Collect green objects & avoid";
+        String s4 = "everything else!";
+
+      }//end display()
+      
+    }//end Menu
 
 }
