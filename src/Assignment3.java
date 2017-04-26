@@ -141,10 +141,35 @@ public class Assignment3 extends PApplet{
         }//end outer IF
       }//end keyPressed  
 
-
-      
-      
       
     }//end Player()
+    
+    public class Enemy
+    {
+      //variable used for the movement of the enemy
+        int directionX = 0, directionY = 1;
+        float speed=(float) 1.75; 
+        float randomX = random(40, 460), randomY = random(40, 460);
+        float randMove = random(1);
+     
+        
+      Enemy()
+      {
+      }
+      
+      void run()
+      {
+        display();
+        move();
+      }
+      
+      
+      void display()
+      {
+        //Drawing the enemy model;
+        noStroke();
+        fill (245, 95, 175); 
+        rect (randomX, randomY, 20, 20, 5);
+      }
 
 }
