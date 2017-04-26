@@ -322,7 +322,11 @@ public class Assignment3 extends PApplet{
 
       }//end collide
       
-      public class Score extends Die
+
+      
+    }//end die
+    
+    public class Score extends Die
 	    {
 	      int score = 0;
 	      
@@ -368,6 +372,4 @@ public class Assignment3 extends PApplet{
 	      }//end collide
 	      
 	    }//end Score
-      
-    }//end die
 }
