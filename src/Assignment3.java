@@ -1,4 +1,4 @@
-import Assignment.Enemy;
+
 import processing.core.*;
 
 public class Assignment3 extends PApplet{
