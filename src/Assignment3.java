@@ -197,5 +197,28 @@ public class Assignment3 extends PApplet{
         {   
           randomY = 460;
         } //end if 
-
+        
+        //randomsing movement
+        if(randMove <.25)
+        {
+          directionX = 1;
+          directionY = 0;
+        }
+        if(randMove > .25 && randMove< 0.5)
+        {
+          directionX = -1;
+          directionY = 0;
+        }
+            if(randMove >.5 && randMove < 0.75)
+        {
+          directionY = 1;
+          directionX = 0;
+        }
+            if(randMove >.75)
+        {
+          directionY = -1;
+          directionX = 0;
+        }
+      }
+    }
 }
