@@ -1,7 +1,5 @@
 
 import java.util.ArrayList;
-
-import Assignment.Enemy;
 import processing.core.*;
 
 public class Assignment3 extends PApplet{
@@ -15,7 +13,7 @@ public class Assignment3 extends PApplet{
 	Die die = new Die();
 	Score score = new Score();
 	
-	//variable to let the game know when to begin
+	//variable to let the game know what state its in
 	char start = 'a';
 
 	//array list to store all the enemies. (Polymorphism used here as it includes 2 different types of enemy
@@ -47,15 +45,17 @@ public class Assignment3 extends PApplet{
   	    enemies.add(new Enemy());
   	  }//end for
 
-    }
+    }//end setup
 
     public void draw(){
     background(0);
+    //switch statement for game states
   	  switch(start)
   	  {
   	    case 'a': 
   	      menu.display();
   	      die.lives = 5;
+  	      //starts the game
   	      if(keyCode == ENTER)
   	      {
   	        start = 'b';
