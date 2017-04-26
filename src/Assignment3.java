@@ -105,6 +105,17 @@ public class Assignment3 extends PApplet{
   	      text(s1, 160, 150);
   	      text(s2, 148, 250);
   	      text(s3, 135, 300);
+  	      
+	      if(keyCode == SHIFT)
+	      {
+	        die.lives = 5;
+	      }
+	      if(die.lives == 5)
+	      {
+	        start = 'a';
+	      }
+	      
+	      break;
 
   	  
   	   }//end switch
