@@ -14,6 +14,9 @@ public class Assignment3 extends PApplet{
 	Collect collect = new Collect();
 	Die die = new Die();
 	Score score = new Score();
+	
+	//variable to let the game know when to begin
+	char start = 'a';
 
 	//array list to store all the enemies. (Polymorphism used here as it includes 2 different types of enemy
 	ArrayList<Enemy> enemies = new ArrayList<Enemy>();
@@ -47,6 +50,24 @@ public class Assignment3 extends PApplet{
     }
 
     public void draw(){
+    background(0);
+  	  switch(start)
+  	  {
+  	    case 'a': 
+  	      menu.display();
+  	      die.lives = 5;
+  	      if(keyCode == ENTER)
+  	      {
+  	        start = 'b';
+  	      }
+  	      break;
+  	    
+  	    case 'b':
+  	      
+  	    case 'c': 
+
+  	  
+  	   }//end switch
 
     }
     
