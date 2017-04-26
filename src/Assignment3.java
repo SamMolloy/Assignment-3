@@ -1,11 +1,4 @@
 
-import Assignment.Border;
-import Assignment.Collect;
-import Assignment.Die;
-import Assignment.Enemy;
-import Assignment.Menu;
-import Assignment.Player;
-import Assignment.Score;
 import processing.core.*;
 
 public class Assignment3 extends PApplet{
