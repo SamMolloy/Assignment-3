@@ -31,6 +31,22 @@ public class Assignment3 extends PApplet{
 
     }
     
+    public void keyPressed()
+    {
+
+        if(keyCode == ENTER)
+        {
+          start = 'b';
+        }//end inner if
+     
+        if(keyCode == SHIFT)
+        {
+          start = 'a';
+        }
+        
+
+    }
+    
     public class Menu
     {  
       
