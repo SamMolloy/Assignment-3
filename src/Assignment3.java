@@ -63,6 +63,10 @@ public class Assignment3 extends PApplet{
   	      break;
   	    
   	    case 'b':
+  	      player.run();
+  	      die.display();
+  	      die.collide();
+  	      score.run();
   	      
   	    case 'c': 
 
