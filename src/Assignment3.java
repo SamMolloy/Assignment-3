@@ -236,4 +236,24 @@ public class Assignment3 extends PApplet{
       }//end display
        
     }//end collect
+    
+    public class Border
+    {
+
+      Border()
+      {
+      }
+      
+      //draws the yellow border lines around the screen
+      void display()
+      {
+        stroke(0, 0, 255);
+        
+        line(30, 30, 470, 30);
+        line(30, 470, 470, 470);
+        line(470, 30, 470, 470);
+        line(30, 30, 30, 470);
+         
+      }  
+    }//end border
 }
