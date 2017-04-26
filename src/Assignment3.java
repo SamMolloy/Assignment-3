@@ -256,4 +256,20 @@ public class Assignment3 extends PApplet{
          
       }  
     }//end border
+    
+    public class Enemy2 extends Enemy
+    {
+      //setting the faster speed of the new enemy
+        float speed = (float) 2.75;
+      
+        void display()
+      {
+        //Drawing the enemy model;
+        noStroke();
+        fill (40, 235, 255 ); 
+        rect (randomX, randomY, 15, 15, 5);
+      }
+
+      
+    }//end enemy2
 }
