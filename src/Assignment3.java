@@ -161,7 +161,7 @@ public class Assignment3 extends PApplet{
       void display()
       {
         //Strings for the start menu options
-        String s1 = "Press Up Arrow to Start!";
+        String s1 = "Press Enter Key to Start!";
         String s2 = "Arrow Keys to move";
         String s3 = "Collect green objects & avoid";
         String s4 = "everything else!";
