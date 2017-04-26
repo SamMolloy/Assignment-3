@@ -89,7 +89,40 @@ public class Assignment3 extends PApplet{
         
       }
            
-
+    //Setting the movement controls
+      void keyPressed()
+      {
+        if (key == CODED)
+        {
+          if (keyCode == LEFT)
+          {    
+            speed = (float) 2.75;
+            directionX=-1;
+            directionY=0;     
+          }//end LEFT
+        
+          else if (keyCode == RIGHT)
+          {  
+            speed = (float) 2.75;
+            directionX=1;
+            directionY=0;    
+          }//end RIGHT
+        
+          else if (keyCode == UP)
+          {    
+            speed = (float) 2.75;
+            directionY=-1;
+            directionX=0;     
+          }//end UP
+        
+          else if (keyCode == DOWN)
+          {
+            speed = (float) 2.75;
+            directionY=1;
+            directionX=0;
+          }//end DOWN
+        }//end outer IF
+      }//end keyPressed  
 
 
       
