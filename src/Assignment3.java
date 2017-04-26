@@ -171,5 +171,31 @@ public class Assignment3 extends PApplet{
         fill (245, 95, 175); 
         rect (randomX, randomY, 20, 20, 5);
       }
+      
+    //setting the enemies random movement
+      void move()
+      {
+        
+        //setting the enemies movement
+        randomX = randomX+speed*directionX;
+        randomY = randomY+speed*directionY; 
+           
+        //stopping the enemy fromm moving off the screen
+        if (randomX > 460)
+        {
+          randomX = 40;
+        }//end if
+        if (randomY > 460)
+        {  
+          randomY = 40;
+        } //end if 
+        if (randomX < 40)
+        {
+          randomX = 460;
+        }//end if
+        if (randomY < 40)
+        {   
+          randomY = 460;
+        } //end if 
 
 }
