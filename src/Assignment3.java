@@ -71,6 +71,17 @@ public class Assignment3 extends PApplet{
 
     }
     
+	  //increases the enemy speed by 0.05 every 8 seconds
+    public void addSpeed()
+    {
+      if(millis() > checktime+interval)
+      {
+        checktime = millis();
+        enemy.speed = (float) (enemy.speed + 0.05);
+      }
+    }//end addSpeed
+
+    
     public void keyPressed()
     {
 
