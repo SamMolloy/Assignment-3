@@ -1,4 +1,7 @@
 
+import java.util.ArrayList;
+
+import Assignment.Enemy;
 import processing.core.*;
 
 public class Assignment3 extends PApplet{
@@ -12,6 +15,8 @@ public class Assignment3 extends PApplet{
 	Die die = new Die();
 	Score score = new Score();
 
+	//array list to store all the enemies. (Polymorphism used here as it includes 2 different types of enemy
+	ArrayList<Enemy> enemies = new ArrayList<Enemy>();
 	
 	public static void main(String[] args) {
 		PApplet.main("Assignment3");
