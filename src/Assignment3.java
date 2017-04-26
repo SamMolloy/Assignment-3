@@ -68,6 +68,18 @@ public class Assignment3 extends PApplet{
   	      die.collide();
   	      score.run();
   	      
+  	     //for loop to run all the enemy objects
+	      for (int i = 0; i < enemies.size(); i++) 
+	      {
+	        Enemy enemy = enemies.get(i);
+	        enemy.run();
+	        //sets a max of 15 enemies 
+	        if(enemies.size() > 15)
+	        {
+	          enemies.remove(0);
+	        }
+	      }//end for
+  	      
   	    case 'c': 
 
   	  
