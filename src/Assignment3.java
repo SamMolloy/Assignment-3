@@ -1,4 +1,7 @@
 
+import Assignment.Die;
+import Assignment.Enemy;
+import Assignment.Enemy2;
 import processing.core.*;
 
 public class Assignment3 extends PApplet{
@@ -304,6 +307,27 @@ public class Assignment3 extends PApplet{
           }//end for   
 
       }//end collide
+      
+      public class Score extends Die
+	    {
+	      int score = 0;
+	      
+	      
+	      void run()
+	      {
+	        display();
+	        collide();
+	      }
+	      
+	      void display()
+	      {
+	        String s1 = "Score: " + score;
+	        text(s1, 385, 490);
+	      }
+	      
+	     
+	      
+	    }//end Score
       
     }//end die
 }
