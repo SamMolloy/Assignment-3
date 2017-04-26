@@ -73,6 +73,7 @@ public class Assignment3 extends PApplet{
 	      {
 	        Enemy enemy = enemies.get(i);
 	        enemy.run();
+	        
 	        //sets a max of 15 enemies 
 	        if(enemies.size() > 15)
 	        {
@@ -84,7 +85,7 @@ public class Assignment3 extends PApplet{
 	      collect.run();
 	      border.display();
 	    
-	      
+	      //Triggers the death splash screen
 	      if(die.lives <= 0)
 	      {
 	        start = 'c';
@@ -93,7 +94,7 @@ public class Assignment3 extends PApplet{
   	      
   	    case 'c': 
   	    	
-  		  
+  		  //Splash Screen text
   	      background(255,0,0);
   	      String s1 = "Game Over";
   	      String s2 = "Press Shift to";
@@ -106,6 +107,7 @@ public class Assignment3 extends PApplet{
   	      text(s2, 148, 250);
   	      text(s3, 135, 300);
   	      
+  	      //Links the death screen to the menu
 	      if(keyCode == SHIFT)
 	      {
 	        die.lives = 5;
@@ -122,7 +124,7 @@ public class Assignment3 extends PApplet{
 
     }
     
-	  //increases the enemy speed by 0.05 every 8 seconds
+	//increases the enemy speed by 0.05 every 8 seconds
     public void addSpeed()
     {
       if(millis() > checktime+interval)
@@ -152,7 +154,6 @@ public class Assignment3 extends PApplet{
     public class Menu
     {  
       
-    
       Menu()
       {
       }
