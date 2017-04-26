@@ -79,6 +79,17 @@ public class Assignment3 extends PApplet{
 	          enemies.remove(0);
 	        }
 	      }//end for
+	      
+	      addSpeed();
+	      collect.run();
+	      border.display();
+	    
+	      
+	      if(die.lives <= 0)
+	      {
+	        start = 'c';
+	      }
+	      break;
   	      
   	    case 'c': 
 
