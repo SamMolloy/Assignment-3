@@ -272,4 +272,24 @@ public class Assignment3 extends PApplet{
 
       
     }//end enemy2
+    
+    public class Die
+    {
+      int lives = 5;
+      Die()
+      {
+      }
+      
+      void display()
+      {
+        String s1 = "Lives: " + lives;
+          fill(255,255,0);
+          textSize(18);
+          text(s1, 50, 490);
+      }
+      
+      //checks for collision between the player and all the enemy objects and deducts a life if it hits
+      
+      
+    }//end die
 }
