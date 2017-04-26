@@ -92,6 +92,19 @@ public class Assignment3 extends PApplet{
 	      break;
   	      
   	    case 'c': 
+  	    	
+  		  
+  	      background(255,0,0);
+  	      String s1 = "Game Over";
+  	      String s2 = "Press Shift to";
+  	      String s3 = "Return to Menu";
+
+  	    
+  	      fill(0);
+  	      textSize(30);
+  	      text(s1, 160, 150);
+  	      text(s2, 148, 250);
+  	      text(s3, 135, 300);
 
   	  
   	   }//end switch
