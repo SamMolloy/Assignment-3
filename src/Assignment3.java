@@ -87,6 +87,23 @@ public class Assignment3 extends PApplet{
         x=x+speed*directionX;
         y=y+speed*directionY; 
         
+        //stopping the player form moving off the screen
+        if (x > 470)
+        {
+          x = 30;
+        }//end if
+        if (y > 470)
+        {   
+          y = 30;
+        } //end if 
+        if (x < 30)
+        {
+          x = 470;
+        }//end if
+        if (y < 30)
+        {   
+          y = 470;
+        } //end if 
       }
            
     //Setting the movement controls
