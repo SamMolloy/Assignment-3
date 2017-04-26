@@ -29,6 +29,12 @@ public class Assignment3 extends PApplet{
     }
 
     public void setup(){
+    	
+    	  //for loop that starts the game off with 3 enemies
+  	  for (int i = 0; i<3; i++)
+  	  {
+  	    enemies.add(new Enemy());
+  	  }//end for
 
     }
 
