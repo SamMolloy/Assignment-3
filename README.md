@@ -21,4 +21,6 @@ Key Features:
 The key features that I was pleased with in this game were my use of Polymorphism whereby I stored both types of enemy object
 in the same arraylist. This was a little tricky to implement but was worthwile once completed. I also used inheritance between
 multiple classes such as the enemies and also the life and score counters.
+
+
 [Youtube Video Demo](https://www.youtube.com/watch?v=ANzHqROFFt4)
